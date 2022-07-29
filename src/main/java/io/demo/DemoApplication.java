@@ -79,6 +79,7 @@ public class DemoApplication {
 
 		SamePackage sp = new SamePackage();
 		System.out.println(sp.onPublic);
+
 	}
 
 }
