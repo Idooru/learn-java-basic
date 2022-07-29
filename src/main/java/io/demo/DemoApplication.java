@@ -3,6 +3,8 @@ package io.demo;
 import java.util.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import test.Test;
+import test.SamePackage;
 
 @SpringBootApplication
 public class DemoApplication {
@@ -16,11 +18,11 @@ public class DemoApplication {
 		Intro intro = new Intro();
 		intro.sayName();
 
-		Test result = new Test();
-		System.out.println(result.a);
+		// Test result = new Test();
+		// System.out.println(result.a);
 
-		int result2 = result.sum();
-		System.out.println(result2);
+		// int result2 = result.sum();
+		// System.out.println(result2);
 
 		String someLiteral = "Idooru";
 		String someObject = new String("Idooru");
@@ -65,6 +67,18 @@ public class DemoApplication {
 
 		int[][] arr = { { 10, 20 }, { 10, 20, 30, 40 }, { 10 } };
 		System.out.println(Arrays.toString(arr));
+
+		Car2 car2 = new Car2("BMW", 2022, "Black");
+
+		System.out.println(car2.getModel());
+		car2.accelerate(5, 10);
+
+		Test myTest = new Test();
+
+		myTest.test2();
+
+		SamePackage sp = new SamePackage();
+		System.out.println(sp.onPublic);
 	}
 
 }
