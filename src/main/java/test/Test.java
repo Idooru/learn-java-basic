@@ -1,6 +1,8 @@
 package test;
 
-import test2.*;
+import java.util.*;
+import test2.Calculator;
+import test2.PackageTest;
 import test.order.ChildClass;
 
 public class Test {
@@ -24,7 +26,11 @@ public class Test {
         Test test = new Test();
         test.test2();
 
-        ChildClass cc = new ChildClass();
+        // ChildClass cc = new ChildClass();
 
+        Calculator cst = new Calculator(3, 6);
+        List<Integer> array = cst.main();
+
+        System.out.println(array);
     }
 }

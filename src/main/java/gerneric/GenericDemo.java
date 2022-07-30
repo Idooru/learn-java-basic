@@ -28,6 +28,10 @@ class Person<T, U> {
 
 public class GenericDemo {
 
+    public static void sayHello() {
+        System.out.println("Hello!");
+    }
+
     public static void main(String[] args) {
         StudentInfo s1 = new StudentInfo(2);
         EmployeeInfo e1 = new EmployeeInfo(4);
@@ -36,5 +40,7 @@ public class GenericDemo {
         System.out.println(p3.info);
         System.out.println(p3.age);
         System.out.println(p3);
+
+        GenericDemo.sayHello();
     }
 }
