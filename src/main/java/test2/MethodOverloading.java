@@ -12,6 +12,10 @@ class Test {
     void display(int num1, double num2) {
         System.out.println(num1 + num2);
     }
+
+    void display(int num1, String str1) {
+        System.out.println(num1 + " " + str1);
+    }
 }
 
 public class MethodOverloading {
@@ -22,5 +26,6 @@ public class MethodOverloading {
         myFunc.display(10, 20);
         myFunc.display(10, 3.14);
         myFunc.display(10, 'a');
+        myFunc.display(10, "Hello");
     }
 }

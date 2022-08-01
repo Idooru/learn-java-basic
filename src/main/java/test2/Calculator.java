@@ -14,10 +14,10 @@ public class Calculator {
     public List<Integer> main() {
         List<Integer> resultList = new ArrayList<Integer>();
 
-        resultList.add(this.returnSum());
-        resultList.add(this.returnMin());
-        resultList.add(this.returnMul());
-        resultList.add(this.returnDiv());
+        resultList.add(returnSum());
+        resultList.add(returnMin());
+        resultList.add(returnMul());
+        resultList.add(returnDiv());
 
         return resultList;
 
