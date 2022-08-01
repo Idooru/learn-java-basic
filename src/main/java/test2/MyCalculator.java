@@ -2,11 +2,11 @@ package test2;
 
 import java.util.*;
 
-public class Calculator {
+public class MyCalculator {
     private int a;
     private int b;
 
-    public Calculator(int a, int b) {
+    public MyCalculator(int a, int b) {
         this.a = a;
         this.b = b;
     }
