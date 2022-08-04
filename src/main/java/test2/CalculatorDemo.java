@@ -55,11 +55,17 @@ class CalculatorDecoMinus extends Calculator {
 }
 
 public class CalculatorDemo {
-    public static void main(String[] args) {
-        CalculatorDecoPlus cdp = new CalculatorDecoPlus(32, 12);
-        CalculatorDecoMinus cdm = new CalculatorDecoMinus(45, 32);
+    public static void execute(Calculator cal) {
+        System.out.println("실행 결과");
 
-        cdp.run();
-        cdm.run();
+        cal.run();
+    }
+
+    public static void main(String[] args) {
+        Calculator c1 = new CalculatorDecoPlus(32, 12);
+        Calculator c2 = new CalculatorDecoMinus(45, 32);
+
+        execute(c1);
+        execute(c2);
     }
 }

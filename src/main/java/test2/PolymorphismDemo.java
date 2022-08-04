@@ -22,10 +22,6 @@ class Chulsu extends Human {
 
 interface Champion {
     public void call();
-
-    public static void main(String[] args) {
-        System.out.println("Hello");
-    }
 }
 
 class Garen implements Champion {
@@ -39,13 +35,13 @@ class Garen implements Champion {
 }
 
 public class PolymorphismDemo {
-    static int a = 5;
 
     public static void main(String[] args) {
         Human chulsu = new Chulsu();
 
         chulsu.call();
         chulsu.staticy();
+        Chulsu.staticy();
         // chulsu.status(); // Human 객체에 status() 메서드가 없기 때문에 사용 불가능
 
     }
